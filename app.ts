@@ -1,23 +1,9 @@
-interface Pessoa{
-    name: string,
-    age: number,
-    profession?: string // campo opcional
-}//instanciando o objeto Pessoa
+const num: number = 15
 
-const francio: Pessoa = {
-    name: "Francio",
-    age: 19
+if(num >=10){
+    console.log(`${num} maior que 10`);
+}else if (num === 15){
+    console.log(`${num} é igual a 15`)
+}else {
+    console.log(`${num} menor que 10`);
 }
-const clara: Pessoa = {
-    name: "Clara",
-    age: 18
-}
-
-const listaPessoas: Array<Pessoa> = [
-    francio,
-    clara
-] //O tipo passado é o tipo Array em que os campos são objetos do tipo pessoa
-
-//OU
-
-const listaNum: number[] = [1, 2, 3]
