@@ -1,13 +1,20 @@
-//Arrays
+//POO
 
-const array: Array<Number> = [1, 2, 3]
+class User {
 
-// const arrayString: string[] = ['a', 'b', 'c']
+    name: string
+    age: number
 
-// const buscaNum = array.find(num => num === 3);
+    constructor(name:string, age:number){
+        this.name = name
+        this.age = age
+    }
 
-// console.log(buscaNum)
+    showName = () => {
+        console.log(this.name)
+    }
+}
 
-array.forEach(num => console.log(num)) // A CADA ITERAÇÃO A FUNÇÃO DE CALLBACK EH CHAMADA
+const user = new User('Francio', 19)
 
-array.map(num => console.log(num))
+user.showName()
