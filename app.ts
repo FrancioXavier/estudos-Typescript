@@ -1,20 +1,13 @@
-//POO
+//DIO Banking
+import { companyAccount } from './class/companyAccount'
+import { peopleAccount } from './class/peopleAccount'
 
-class User {
 
-    name: string
-    age: number
 
-    constructor(name:string, age:number){
-        this.name = name
-        this.age = age
-    }
 
-    showName = () => {
-        console.log(this.name)
-    }
-}
 
-const user = new User('Francio', 19)
+const firstPeopleAccount: peopleAccount = new peopleAccount(1234567, 'Francio', 1)
+const firstCompanyAccount: companyAccount = new companyAccount('DIO', 11)
 
-user.showName()
+
+firstCompanyAccount.deposit()
