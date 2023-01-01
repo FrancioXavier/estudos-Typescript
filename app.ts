@@ -1,24 +1,13 @@
-const num: number = 15
+//Arrays
 
-if(num >=10){
-    console.log(`${num} maior que 10`);
-}else if (num === 15){
-    console.log(`${num} é igual a 15`)
-}else {
-    console.log(`${num} menor que 10`);
-}
+const array: Array<Number> = [1, 2, 3]
 
+// const arrayString: string[] = ['a', 'b', 'c']
 
-const typeUser = {
-    admin: "Seja bem-vindo admin!",
-    user: "Seja bem vindo usuário!",
-    viewer: "Por favor se registre!"
-}
+// const buscaNum = array.find(num => num === 3);
 
-function validateUser(user:string){
-    console.log(typeUser[user as keyof typeof typeUser])
-}
+// console.log(buscaNum)
 
-const user = 'admin'
+array.forEach(num => console.log(num)) // A CADA ITERAÇÃO A FUNÇÃO DE CALLBACK EH CHAMADA
 
-validateUser(user);
+array.map(num => console.log(num))
