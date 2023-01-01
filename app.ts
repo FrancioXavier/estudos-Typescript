@@ -1,6 +1,5 @@
-const soma = (a:number, b:number) => {
-    console.log(a+b);
-}
+let a: string = 'a'
+let b: number = 2
+let c: boolean = true
 
-soma(2,2)
-
+let d: number | string
