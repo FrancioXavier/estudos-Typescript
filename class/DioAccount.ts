@@ -5,18 +5,18 @@ export abstract class DioAccount{
     private status: boolean = true
 
     constructor(name: string, id: Number){
-        this.name = name
-        this.id = id
+        this.name = name;
+        this.id = id;
     }
 
     getName = ():string => {
-        return this.name
+        return this.name;
     }
 
     deposit = (value: number):void => {
         if(this.validateStatus()){
             this.balance += value;
-            console.log(`Você depositou ${value}, seu saldo agora é ${this.balance}`)
+            console.log(`Você depositou ${value}, seu saldo agora é ${this.balance}`);
         }
     }
 
@@ -28,23 +28,24 @@ export abstract class DioAccount{
             console.log(`Você não pode sacar um valor maior do que tem!`);
         }
     }
+    
     getBalance = ():number => {
-        return this.balance
+        return this.balance;
     }
 
     private validateStatus = ():boolean => {
         if(this.status){
-            return true
+            return true;
         }
 
-        throw new Error
+        throw new Error;
     }
 
     readonly getStatus = ():boolean => {
         if(this.validateStatus()){
-            return true
+            return true;
         } else{
-            return false
+            return false;
         }
     }
 }

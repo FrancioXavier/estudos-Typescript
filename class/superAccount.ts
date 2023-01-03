@@ -1,4 +1,4 @@
-import { DioAccount } from './DioAccount'
+import { DioAccount } from './DioAccount';
 
 export class SuperAccount extends DioAccount{
 
@@ -11,7 +11,7 @@ export class SuperAccount extends DioAccount{
             console.log('IH');
         }else{
             this.deposit(value + 10);
-            console.log(`Você fez um super depósito de ${value}! Seu saldo agora é ${this.getBalance()}`)
+            console.log(`Você fez um super depósito de ${value}! Seu saldo agora é ${this.getBalance()}`);
         }
     }
 }
