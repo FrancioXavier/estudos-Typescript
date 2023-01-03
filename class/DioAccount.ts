@@ -1,6 +1,6 @@
 export abstract class DioAccount{
     private name:string
-    id: Number
+    readonly id: Number
     balance: number = 0
     private status: boolean = true
 
